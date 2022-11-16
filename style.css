@@ -1,13 +1,14 @@
 body {
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
 .section-1 {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     background-color: black;
     color: white;
 }
@@ -15,36 +16,62 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0 300px;   
+      
 }
  
-.header .left {
-    flex: 1;
-}
 
 a {
-    padding: 0 10px;
     text-decoration: none;
     color: white;
 }
 
-.content {
+.section-1 .content {
     display: flex;
     justify-content: space-between;
-    padding: 50px 300px;
+    
     
 }
 
-.content .text {
+.section-1 .content .text {
     display: flex;
-    width: 500px;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.content .text .title {
-    
-}
 button {
     width: 100px
+}
+
+.section-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    padding: 40px 0 80px;
+}
+
+.section-2 .content {
+    display: flex;
+}
+
+.section-2 .content .one,
+.section-2 .content .two,
+.section-2 .content .three,
+.section-2 .content .four {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2 .image,
+.section-2 .text {
+    margin: 10px 20px;
+    
+}
+
+.section-2 .text {
+    width: 256px;
+    text-align: center;
 }
